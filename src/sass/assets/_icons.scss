@@ -1,0 +1,61 @@
+.i-tg {
+	width: 25px;
+	height: 25px;
+	fill: $lightGray;
+	@media (max-width: $md) {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.i-wa {
+	width: 25px;
+	height: 25px;
+	fill: $lightGray;
+	@media (max-width: $md) {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.i-inst {
+	width: 25px;
+	height: 25px;
+	fill: $lightGray;
+	@media (max-width: $md) {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.i-vk {
+	width: 30px;
+	height: 30px;
+	fill: $lightGray;
+	@media (max-width: $md) {
+		width: 25px;
+		height: 25px;
+	}
+}
+
+.i-burger {
+	width: 35px;
+	height: 25px;
+	fill: $black;
+}
+
+.i-right {
+	width: 15px;
+	height: 10px;
+	fill: $lightGray;
+	@media screen and (max-width: $md) {
+		width: 12px;
+		height: 8px;
+	}
+}
+
+.i-cross {
+	width: 25px;
+	height: 25px;
+	fill: $lightGray;
+}

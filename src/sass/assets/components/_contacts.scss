@@ -1,0 +1,74 @@
+.contacts {
+	padding: 90px 0 120px 0;
+	background: $darkPink;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		gap: 60px;
+		@media screen and (max-width: $lg) {
+			flex-direction: column;
+			align-items: center;
+		}
+		@media screen and (max-width: $lg) {
+			text-align: center;
+		}
+	}
+	&__title {
+		margin-bottom: 30px;
+	}
+	&__address {
+		margin-bottom: 40px;
+		font-size: 20px;
+		color: $gray;
+		display: block;
+		max-width: 320px;
+		@media screen and (max-width: $lg) {
+			max-width: 100%;
+		}
+		@media screen and (max-width: $md) {
+			font-size: 18px;
+		}
+	}
+	&__schedule {
+		margin-bottom: 20px;
+		font-size: 20px;
+		color: $gray;
+		span {
+			color: $black;
+		}
+		@media screen and (max-width: $md) {
+			font-size: 18px;
+		}
+	}
+	&__number {
+		margin-bottom: 40px;
+		display: block;
+		font-size: 22px;
+		font-weight: 700;
+		@media screen and (max-width: $md) {
+			font-size: 20px;
+		}
+	}
+	&__paragraph {
+		margin-bottom: 10px;
+	}
+	&__social {
+		justify-content: flex-start;
+		@media screen and (max-width: $lg) {
+			justify-content: center;
+		}
+	}
+	&__map {
+		width: 700px;
+		height: 525px;
+		@media screen and (max-width: $lg) {
+			width: 100%;
+		}
+		@media screen and (max-width: $md) {
+			height: 300px;
+		}
+	}
+}
+[class*='copyrights-pane'] {
+	display: none;
+}

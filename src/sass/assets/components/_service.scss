@@ -1,0 +1,104 @@
+.service {
+	padding-top: 80px;
+	margin-bottom: 180px;
+	@media screen and (max-width: $md) {
+		margin-bottom: 100px;
+	}
+	&__title {
+		margin-bottom: 60px;
+		@media screen and (max-width: $md) {
+			margin-bottom: 30px;
+		}
+	}
+	&__cards {
+	}
+}
+
+.service-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+	@media screen and (max-width: $md) {
+		gap: 15px;
+	}
+}
+
+.service-card {
+	cursor: pointer;
+	position: relative;
+	width: 585px;
+	min-height: 156px;
+	padding: 45px 30px;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	@media screen and (max-width: $md) {
+		width: 500px;
+		min-height: 90px;
+		padding: 20px;
+	}
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 4px;
+		background: #e9cfcf;
+	}
+	&__title {
+		max-width: 430px;
+		font-size: 32px;
+		font-family: 'Chekhovskoy';
+		text-transform: uppercase;
+		@include brown-text-gradient;
+		@media screen and (max-width: $md) {
+			max-width: 205px;
+			font-size: 22px;
+		}
+	}
+	&__text {
+		color: $lightGray;
+	}
+	&__img {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		height: 100%;
+	}
+}
+
+.service-modal {
+	width: 90%;
+	max-width: 1400px;
+	max-height: 80%;
+	padding: 50px 0;
+	background: $lightPink;
+	overflow-y: auto;
+	@media screen and (max-width: 1400px) {
+		width: 70%;
+	}
+
+	@media screen and (max-width: 991px) {
+		width: 100%;
+	}
+	@media screen and (max-width: $md) {
+		padding: 50px 0;
+	}
+	&__cards {
+		@media screen and (max-width: 1549px) {
+			justify-content: center;
+		}
+	}
+	&__title {
+		font-size: 32px;
+		margin-bottom: 40px;
+		@media screen and (max-width: $md) {
+			font-size: 22px;
+			margin-bottom: 20px;
+		}
+	}
+}

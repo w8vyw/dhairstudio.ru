@@ -1,0 +1,34 @@
+.interior {
+	padding-top: 50px;
+	margin-bottom: 100px;
+	&__wrapper {
+	}
+
+	&__title {
+		margin-bottom: 50px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 10px;
+	}
+
+	&__item {
+		&--order {
+			@media screen and (max-width: $lg) {
+				order: 1;
+			}
+		}
+		&-img {
+			@media screen and (max-width: $md) {
+				max-width: 300px;
+				max-height: 170px;
+			}
+			@media screen and (max-width: $sm) {
+				max-height: 105px;
+			}
+		}
+	}
+}

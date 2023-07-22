@@ -1,0 +1,7 @@
+import '../index.html'
+import '../sass/main.scss'
+import './assets/components/menu'
+import './assets/components/modals'
+import './assets/components/ymap'
+// import './assets/components/imgViewModal'
+// import './assets/components/toTop'

@@ -1,0 +1,25 @@
+.social {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+	@media (max-width: 1030px) {
+		gap: 25px;
+	}
+	@media (max-width: $md) {
+		gap: 15px;
+	}
+	&__link {
+		svg {
+			transition: 0.2s ease-in-out;
+		}
+		&:hover,
+		&:focus,
+		&:active {
+			svg {
+				fill: $brown;
+			}
+		}
+	}
+}

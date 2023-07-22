@@ -1,0 +1,37 @@
+.team {
+	margin-bottom: 50px;
+	&__title {
+		margin-bottom: 50px;
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 30px;
+		@media screen and (max-width: $lg) {
+			grid-template-columns: repeat(2, minmax(0, 280px));
+			justify-content: center;
+			gap: 15px;
+		}
+	}
+	&__member {
+		text-align: center;
+	}
+	&__member-img {
+		margin-bottom: 25px;
+		width: 280px;
+		max-height: 326px;
+		object-fit: cover;
+		object-position: center;
+	}
+	&__member-name {
+		margin-bottom: 15px;
+		font-size: 20px;
+		@include brown-text-gradient;
+		@media screen and (max-width: $lg) {
+			font-size: 18px;
+		}
+	}
+	&__member-text {
+		color: $gray;
+	}
+}

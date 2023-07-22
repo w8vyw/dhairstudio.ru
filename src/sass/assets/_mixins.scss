@@ -1,0 +1,8 @@
+@mixin brown-text-gradient() {
+	background: radial-gradient(28.4% 173.38% at 20.43% -41.56%, #daa791 0%, rgba(218, 167, 145, 0) 100%),
+		radial-gradient(75.32% 499.41% at 80.74% 50.65%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), $brown;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+}
